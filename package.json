@@ -1,0 +1,30 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "set NODE_ENV=production && nodemon server.js",
+    "start:dev": "set NODE_ENV=development && nodemon server.js",
+    "importdb": "node dev-data/data/dev-data-import.js --import",
+    "deletedb": "node dev-data/data/dev-data-import.js --delete"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^7.5.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^5.13.22",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.16",
+    "validator": "^13.12.0",
+    "xss-clean": "^0.1.4"
+  }
+}
